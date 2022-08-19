@@ -12,6 +12,7 @@ import planimg from '../../data/products/plan.png';
 import travelimg from '../../data/products/travel.png';
 import workimg from '../../data/products/work.png';
 import {house, family, car, plane, money, health, pension} from '../../svgs/home'
+import { Link } from 'react-router-dom';
 
 const Product = () => {
   return (
@@ -21,55 +22,55 @@ const Product = () => {
             
           <VStack spacing={'0.5em'}>
             <HStack spacing={'4em'}>
-              <ProductCard
+            <Link to="houseinsurance"><ProductCard
                 heading={'HOUSE INSURANCE'}
                 img={homeimg}
                 icon={house}
-              />
-              <ProductCard
+              /></Link>
+             <Link to="familyinsurance"><ProductCard
                 heading={'FAMILY INSURANCE'}
                 img={familyimg}
                 icon={family}
-              />
-              <ProductCard
+              /></Link>
+              <Link to="businessinsurance"><ProductCard
                 heading={'BUSINESS INSURANCE'}
                 img={workimg}
                 icon={money}
-              />
+              /></Link>
             </HStack>
             <HStack spacing={'4em'}>
-              <ProductCard
+            <Link to="travelinsurance"><ProductCard
                 heading={'TRAVEL INSURANCE'}
                 img={travelimg}
                 icon={plane}
-              />
-              <ProductCard
+              /></Link>
+              <Link to="healthinsurance"><ProductCard
                 heading={'HEALTH INSURANCE'}
                 img={healthimg}
                 icon={health}
-              />
-              <ProductCard
+              /></Link>
+              <Link to="carinsurance"><ProductCard
                 heading={'CAR INSURANCE'}
                 img={carimg}
                 icon={car}
-              />
+              /></Link>
             </HStack>
             <HStack spacing={'4em'}>
-              <ProductCard
+            <Link to="employeeinsurance"><ProductCard
                 heading={'EMPLOYEE BENEFITS'}
                 img={planimg}
                 icon={pension}
-              />
-              <ProductCard
+              /></Link>
+              <Link to="pensioninsurance"><ProductCard
                 heading={'LIFE AND PENSION'}
                 img={pensionimg}
                 icon={house}
-              />
-              <ProductCard
+              /></Link>
+              <Link to="bondsinsurance"><ProductCard
                 heading={'BONDS AND GUARANTEES'}
                 img={bonds}
                 icon={house}
-              />
+              /></Link>
             </HStack>
           </VStack>
         </VStack>

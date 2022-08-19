@@ -28,15 +28,14 @@ const InsuranceCard: FC<Props> = ({ heading, description, mr, height }) => {
       borderWidth='thin'
       borderRadius={'5px'}>
       <Flex align="center" pb="1rem">
-        <Heading as="h6" color={'#003B79'} fontFamily="smbold" fontSize={{ base: '1rem', lg: '1.4rem' }}>
+        <Heading as="h6" color={'#003B79'} fontWeight={'bold'} fontSize={{ base: '1rem', lg: '1.4rem' }}>
           {heading}
         </Heading>
       </Flex>
       <Text
       color={'#36534F'}
         mb='1em'
-        fontSize={{ base: '1rem', lg: '1rem' }}
-        fontFamily="medium"
+        fontSize={{ base: '1rem', lg: 'small' }}
         maxW="48.4rem">
         {description}
       </Text>

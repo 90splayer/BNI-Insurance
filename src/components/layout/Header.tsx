@@ -16,14 +16,14 @@ const Header = () => {
            BNI INSURANCE
         </Text>
         </Link>
-        <HStack spacing="4rem" fontFamily="medium" fontWeight={'bold'} fontSize="1rem" zIndex={1} ml={'6em'}>
-            <Box _hover={{ color: '#FAA1E1' }} display={{ base: 'none', lg: 'flex' }}>
+        <HStack spacing="4rem" fontWeight={'bold'} fontSize="smaller" zIndex={1} ml={'6em'}>
+            <Box _hover={{ color: '#003B79' }} display={{ base: 'none', lg: 'flex' }}>
              <Link to="products">Products</Link>
             </Box>
-            <Box _hover={{ color: '#FAA1E1' }} display={{ base: 'none', lg: 'flex' }}>
+            <Box _hover={{ color: '#003B79' }} display={{ base: 'none', lg: 'flex' }}>
             <Link to="insights">Insights</Link>
             </Box>
-            <Box _hover={{ color: '#FAA1E1' }} display={{ base: 'none', lg: 'flex' }}>
+            <Box _hover={{ color: '#003B79' }} display={{ base: 'none', lg: 'flex' }}>
             <Link to="about">About us</Link>
             </Box>
         </HStack>
@@ -32,10 +32,9 @@ const Header = () => {
           bg="#003B79"
           color={'white'}
           borderRadius={'xl'}
-          fontSize="1rem"
-          fontFamily="light"
+          fontSize="smaller"
           px="1.5rem"
-          py="0.2rem"
+          py="0.1rem"
           _hover={{ bg: '#FDB811' }} zIndex={1}>
           Contact Us
         </Button></Link>

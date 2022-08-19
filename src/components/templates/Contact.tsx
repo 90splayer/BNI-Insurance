@@ -4,7 +4,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <Box bg={'#F0F4F7'} pt={'2em'}>
-        <HStack align={'flex-start'} justify={'center'} spacing='5em' pb={'2em'}>
+        <HStack align={'flex-start'} justify={'center'} spacing='5em' pb={'2em'} fontSize={'smaller'} fontWeight={'bold'}>
             <VStack align={'flex-start'} spacing='3em'>
                 <VStack align={'flex-start'}>
                 <Text>Contact Information</Text>
