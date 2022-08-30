@@ -18,7 +18,7 @@ const Product = () => {
   return (
     <Box bg={'#F0F4F7'}>
         <VStack spacing={'2em'} pb={'1em'}>
-            <Heading fontWeight={'extrabold'} color={'#003B79'}>Products</Heading>
+            
             
           <VStack spacing={'0.5em'}>
             <HStack spacing={'4em'}>

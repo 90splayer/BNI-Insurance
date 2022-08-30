@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import React from 'react'
 import ProductPageCard from '../components/templates/products/ProductPageCard'
-import carimg from '../components/data//products/car.png';
+import carimg from '../assets/images/pages/carpage.png'
 
 const CarPage = () => {
   return (

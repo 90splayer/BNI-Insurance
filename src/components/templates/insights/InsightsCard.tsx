@@ -10,7 +10,7 @@ type Props = {
 const InsightsCard: FC<Props> = ({ heading, details, img }) => {
   return (
     <Box>
-        <Image src={img} w={'20em'} h={'20em'} />
+        <Image src={img} w={'20em'} h={'18em'} />
         <Box bg={'gray.200'} pb='1em'>
         <VStack w={'18em'} margin={'auto'} py={'1em'}>
             <Text fontSize={'medium'} fontWeight={'bold'}>{heading}</Text>

@@ -1,5 +1,6 @@
-import { Box, Flex, HStack, Text, Button } from '@chakra-ui/react'
+import { Box, Flex, HStack, Text, Button, Image, VStack } from '@chakra-ui/react'
 import React from 'react'
+import logo from '../../assets/bnilogo.png';
 import { Link } from 'react-router-dom'
 
 const Header = () => {
@@ -9,15 +10,18 @@ const Header = () => {
       justify="space-between"
       align="center"
       bg={'#F0F4F7'}
-      px={{ base: '4.3rem', lg: '6rem' }}
+      px={{ base: '1rem', md: '4em', lg: '3rem' }}
       zIndex={2}>
         <Link to="/">
-        <Text fontSize={'x-large'} fontWeight={600} zIndex={1} color={'#003B79'}>
-           BNI INSURANCE
+        <HStack>
+        <Image  src={logo} w={{ base: '2em', md: '2em', lg:'3em' }} alt="bni-logo"/>
+        <Text fontSize={{base: 'md', md: 'large',lg:'x-large'}} fontWeight={600} zIndex={1} color={'#003B79'}>
+           BNI INSURANCE BROKERS
         </Text>
+        </HStack>
         </Link>
-        <HStack spacing="4rem" fontWeight={'bold'} fontSize="smaller" zIndex={1} ml={'6em'}>
-            <Box _hover={{ color: '#003B79' }} display={{ base: 'none', lg: 'flex' }}>
+        <HStack spacing="4rem" fontWeight={'bold'} fontSize={{ base: 'none', md: '0.3em', lg: 'smaller' }} zIndex={1} ml={'6em'}>
+            <Box _hover={{ color: '#003B79' }} display={{ base: 'none', md: 'none', lg: 'flex' }}>
              <Link to="products">Products</Link>
             </Box>
             <Box _hover={{ color: '#003B79' }} display={{ base: 'none', lg: 'flex' }}>

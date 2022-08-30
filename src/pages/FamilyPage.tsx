@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import React from 'react'
 import ProductPageCard from '../components/templates/products/ProductPageCard'
-import familyimg from '../components/data/products/family.png';
+import familyimg from '../assets/images/pages/familypage.png'
 
 const FamilyPage = () => {
   return (

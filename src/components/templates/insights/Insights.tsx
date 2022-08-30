@@ -3,19 +3,20 @@ import React from 'react'
 import InsightsCard from './InsightsCard'
 import inews1 from '../../../assets/images/insights/inews1.jpg'
 import inews2 from '../../../assets/images/insights/inews2.jpg'
+import InsightText from './InsightText'
 
 
 const Insights = () => {
   return (
-    <VStack bg={'#F0F4F7'} justifyContent={'center'} pt={'1em'} pb={'2em'} spacing='2em'>
-    <Heading fontWeight={'extrabold'} color={'#003B79'}>Insights</Heading>
-    <HStack spacing={'5em'}>
+    <Box bg={'#F0F4F7'} justifyContent={'center'} pt={'1em'} pb={'2em'}>
+    <HStack spacing={'1em'}>
         <InsightsCard img= {inews1} heading='NIGERIAN ENTERTAINERS SHOULD BE INSURED'
         details='In 2002, I had the opportunity of meeting of selected persons from both the insurance and entertainment industries at the section of the National Stadium in Surulere, Lagos used for entertainment at the time.
 
         As I listened to the concerns raised by entertainment stakeholders, comprised mostly of actors, directors, producers and scriptwriters, I knew that the insurance industry then could not deliver the products and even the services needed.
 
         For example, the actors, some of whom have become legends today, wanted to know if they would be compensated if the accident resulted from a stunt action in a film. Of course, this was (is) an exemption from a standard Personal Accident Insurance Policy, so the answer then was No! And we will only have to confirm if position has changed 20 years after.'/>
+        <InsightText/>
         <InsightsCard img={inews2} heading='NHIA TASKS STATE GOVERNMENTS ON HEALTH INSURANCE SCHEME'
         details='The National Healthcare Insurance Authority (NHIA) has urged all 36 state governors in the country to establish National Health Insurance Scheme (NHIS) agency in their various states to provide insurance cover to the citizens.
 
@@ -25,7 +26,7 @@ const Insights = () => {
         
         According to him, NHIA will collaborate with state government-run health insurance schemes to accredit primary and secondary health facilities and enrol Nigerians into the scheme in order to ensure the delivery of quality health care across the country.'/>
     </HStack>
-    </VStack >
+    </Box >
   )
 }
 

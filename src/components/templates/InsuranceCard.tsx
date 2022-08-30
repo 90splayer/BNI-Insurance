@@ -7,19 +7,18 @@ type Props = {
   heading: string;
   // eslint-disable-next-line @typescript-eslint/ban-types
   mr?: {};
-  height: string;
 };
 
-const InsuranceCard: FC<Props> = ({ heading, description, mr, height }) => {
+const InsuranceCard: FC<Props> = ({ heading, description, mr }) => {
   return (
     <Box
       color="#fff"
-      px="4.6rem"
-      pt="2rem"
-      h={height}
-      w={{ base: '375px', lg: '500px' }}
+      px={{ base: '3rem',md: '2em', lg: "4.6rem" }}
+      pt={{ base: '0.6rem',md: '2em', lg: '1.2rem' }}
+      h={{ base: '18rem',md: '17em', lg: '15rem' }}
+      w={{ base: '220px', lg: '500px' }}
       zIndex={5}
-      mb={{ base: '5rem', lg: '0' }}
+      mb={{ base: '0', lg: '0' }}
       mr={mr}
       bg="rgba(0, 59, 121, 0.12)"
       _hover={{ bg: 'rgba(253, 184, 17, 0.02)' }}
@@ -28,14 +27,14 @@ const InsuranceCard: FC<Props> = ({ heading, description, mr, height }) => {
       borderWidth='thin'
       borderRadius={'5px'}>
       <Flex align="center" pb="1rem">
-        <Heading as="h6" color={'#003B79'} fontWeight={'bold'} fontSize={{ base: '1rem', lg: '1.4rem' }}>
+        <Heading as="h6" color={'#003B79'} fontWeight={'bold'} fontSize={{ base: '1rem',md: '1em', lg: '1.2rem' }} >
           {heading}
         </Heading>
       </Flex>
       <Text
       color={'#36534F'}
-        mb='1em'
-        fontSize={{ base: '1rem', lg: 'small' }}
+        mb={{ base: '0.6em', md: '0.7em', lg:'1em' }}
+        fontSize={{ base: 'xx-small', md: 'x-small', lg:'small' }}
         maxW="48.4rem">
         {description}
       </Text>

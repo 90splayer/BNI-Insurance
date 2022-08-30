@@ -1,12 +1,12 @@
 import { Box, Image } from '@chakra-ui/react'
 import React from 'react'
 import { car, family, health, house, money, plane } from '../../svgs/home'
-import logo from '../../../assets/logo.png';
+import logo from '../../../assets/bnilogo.png';
 import { Link } from 'react-router-dom';
 
 const CircleLogo = () => {
   return (
-    <Box pos="relative" h={'25em'} >
+    <Box pos="relative" h={'25em'} order={{base:'1', md:'2', lg:'2'}} >
         <Link to="familyinsurance"><Box  _hover={{ bg:'#E5E4E6', transform: 'scale(1.05)'}} 
               cursor={'pointer'} pos="absolute" bg='white' 
               borderRadius={'500%'} p='3' zIndex={9} 
@@ -32,7 +32,7 @@ const CircleLogo = () => {
               borderRadius={'500%'} p='3' zIndex={9} 
               boxShadow='dark-lg' top="305px" left="153px">{health}</Box></Link>
         <Box pos="relative" w={220} p='4em' left= '4em' top= '7em' bg={'#FFFFFF'} borderRadius={'50%'} zIndex={5}>
-        <Image  src={logo} alt="tiddix-hand"/>
+        <Image  src={logo} alt="bni-logo"/>
         </Box>
     </Box>
   )

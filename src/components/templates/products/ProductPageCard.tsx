@@ -9,14 +9,15 @@ type Props = {
 
 const ProductPageCard: FC<Props> = ({ heading, details, img }) => {
   return (
-    <Box pt={'3em'} pb={'3em'} px={'3em'}>
-        <HStack> 
-            <Image src={img} w={'20em'}/>
-            <Heading color={'#003B79'}>{heading}</Heading>
-        </HStack>
-        <Text mt={'2em'} fontSize='lg' color={'#36534F'}>{details}</Text>
-    </Box>
+     <Box >
+            <Image src={img}/>
+            <Box zIndex={1} pos={'absolute'} top={'18em'} left={'21em'}>
+            <Heading zIndex={1} pb={'0.3em'} textAlign={'center'} fontWeight={'semibold'} fontSize='xx-large' color={'white'}>{heading}</Heading>
+            <Text textAlign={'center'} color={'white'} fontSize='md' w={'36em'}>{details}</Text>
+            </Box>
+      </Box>
   )
 }
+
 
 export default ProductPageCard

@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import React from 'react'
 import ProductPageCard from '../components/templates/products/ProductPageCard'
-import workimg from '../components/data/products/work.png';
+import workimg from '../assets/images/pages/workpage.png';
 
 const EmployeePage = () => {
   return (
