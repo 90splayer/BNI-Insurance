@@ -14,7 +14,7 @@ const InsuranceCard: FC<Props> = ({ heading, description, mr }) => {
     <Box
       color="#fff"
       px={{ base: '3rem',md: '2em', lg: "4.6rem" }}
-      pt={{ base: '0.6rem',md: '2em', lg: '1.2rem' }}
+      pt={{ base: '0.6rem',md: '2em', lg: '1.5rem' }}
       h={{ base: '18rem',md: '17em', lg: '15rem' }}
       w={{ base: '220px', lg: '500px' }}
       zIndex={5}

@@ -22,6 +22,7 @@ import HousePage from './pages/HousePage';
 import EmployeePage from './pages/EmployeePage';
 import BondsPage from './pages/BondsPage';
 import PensionPage from './pages/PensionPage';
+import BoardPage from './pages/BoardPage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -53,6 +54,7 @@ function App() {
     <Route path="products/employeeinsurance" element={<EmployeePage />} />
     <Route path="products/bondsinsurance" element={<BondsPage />} />
     <Route path="products/pensioninsurance" element={<PensionPage />} />
+    <Route path="aboutboard" element={<BoardPage />} />
     </Routes>
     <Footer/>
     </BrowserRouter>

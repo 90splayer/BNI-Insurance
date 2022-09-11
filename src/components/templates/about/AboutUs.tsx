@@ -10,7 +10,7 @@ const AboutUs = () => {
         <VStack w={{lg:'15em'}} margin='auto' zIndex={1} spacing={'1.5em'}>
             <Heading zIndex={1} fontWeight={'extrabold'} color={'#003B79'}>About Us</Heading>
             <Box zIndex={1}>
-            <Text textAlign={'center'} fontSize='small'>Our INSURANCE PLC started insurance business in Nigeria in 1948 through the agency of Edward Turner & Co. It became a Nigerian branch of NEM General Insurance Association Limited of London in 1965. Incorporated in 1970 as a Nigerian company in compliance with the Companies Decree of 1968.</Text>
+            <Text textAlign={'center'} fontSize='small'>BNI Insurance Brokers Limited is a leader in the Nigerian insurance brokerage industry. We have built a professional organization with a global reach and a sizable intellectual capital base to assist clients in quantifying and managing risk through our extensive network of insurance providers, helping them to build, protect, and preserve wealth.</Text>
             </Box>
             <Box >
             <Link to="about">

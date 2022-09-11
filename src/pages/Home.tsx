@@ -30,7 +30,6 @@ const Home = () => {
             <Box pb='2em'>
             <Text fontSize={{ base: 'small', md: 'md', lg:'lg' }} color={'#36534F'}>We guarantee you a quick  access to get a quote and even more reliable plan that will save you much more</Text>
             </Box>
-            <Button bg='white' boxShadow='dark-lg' w={{ base: '8em', md: '8em', lg:'10em' }} fontSize={{ base: 'x-small', md: 'x-small', lg:'small' }}>GET A QUOTE</Button>
         </VStack>
         <CircleLogo />
     </HStack>

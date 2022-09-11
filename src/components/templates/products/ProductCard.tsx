@@ -16,7 +16,7 @@ const ProductCard: FC<Props> = ({ heading, icon, img }) => {
         <Image src={img} alt='productimg'/>
         <VStack pos="absolute"
         top="20px"
-        right="3.5em">
+        right="3.5em" >
             <Box bg="white"
         borderRadius={'50%'}
         p={'1em'}>{icon}</Box>
