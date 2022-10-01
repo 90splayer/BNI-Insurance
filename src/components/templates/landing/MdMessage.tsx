@@ -11,7 +11,7 @@ const MdMessage = () => {
               <VStack>
                 <Text color={'white'} textAlign={'left'} 
                 fontWeight={'bold'} fontSize='x-large'
-                 zIndex={1}>“IT’S ABOUT HAVING A TAILORD SYSTEM THAT WORKS FOR YOU.”</Text>
+                 zIndex={1}>“IT’S ABOUT HAVING A TAILORED SYSTEM THAT WORKS FOR YOU.”</Text>
                 <Text color={'white'} textAlign={'left'} fontSize='small' mb={'2em'} zIndex={1}>BNI Insurance isn’t a corporate creation or a character dreamt up by a focus group. She’s the living, breathing economist and master financial advisor who has been making and investing money sinnce the 2010’s.</Text>
                 </VStack>
                 <Text color={'white'} zIndex={1} textAlign={'left'} fontWeight={'bold'} 

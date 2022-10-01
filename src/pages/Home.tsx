@@ -22,7 +22,7 @@ const Home = () => {
   return (
       <Box bg={'#F0F4F7'}>
     <HStack  px='6em' zIndex={2} mb='6em'>
-        <VStack order={{base:'2', md:'1', lg:'1'}} maxW={{lg:'38em'}} textAlign='left' align='flex-start' mt={{base:'0',lg:'6em'}} zIndex={1} pt={{base:'3em'}}>
+        <VStack maxW={{lg:'38em'}} textAlign='left' align='flex-start' mt={{base:'0',lg:'6em'}} zIndex={1} pt={{base:'3em'}}>
             <Box mb='1em'>
             <Text fontSize={{ base: '1.4em', md: '2em', lg:'2.4em' }} 
             fontWeight={'bold'} color={'#003B79'}>NO ONE CAN SURELY PREDICT THE FUTURE. BUT WE CAN PROTECT IT.</Text>

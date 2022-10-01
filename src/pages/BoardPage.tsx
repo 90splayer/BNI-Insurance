@@ -2,6 +2,7 @@ import { Box, Heading, HStack, Image, VStack, Text } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import BoardCard from '../components/templates/BoardCard'
 import oma from '../assets/images/board/oma.png'
+import sam from '../assets/images/board/samojogbo.png'
 import bade from '../assets/images/board/bade.png'
 import feso from '../assets/images/board/feso.jpeg'
 import yunusa from '../assets/images/board/Yunusa.jpeg'
@@ -15,10 +16,12 @@ const BoardPage = () => {
     const [hidden2, isHidden2] = useState(true)
     const [hidden3, isHidden3] = useState(true)
     const [hidden4, isHidden4] = useState(true)
+    const [hidden5, isHidden5] = useState(true)
     const [overlayOpen1, isOverlayOpen1] = useState(false)
     const [overlayOpen2, isOverlayOpen2] = useState(false)
     const [overlayOpen3, isOverlayOpen3] = useState(false)
     const [overlayOpen4, isOverlayOpen4] = useState(false)
+    const [overlayOpen5, isOverlayOpen5] = useState(false)
   return (
       <Box>
           <ProductPageCard 
@@ -27,21 +30,21 @@ const BoardPage = () => {
     details="Deeply rooted in our employees are our values, we are creating long lasting values for our stakeholders"
     />
     <VStack bg={'#F0F4F7'} spacing={'4em'} pb={'6em'} pt={'3em'}>  <Heading>Board of Directors</Heading>
-    <HStack spacing={'2em'}>
-      <Box pos="relative"
+    <HStack spacing={'4em'}>
+    <Box pos="relative"
       transition="0.5s ease"
-      _hover={{ cursor: 'pointer'}} onMouseEnter={() => isHidden(false)}
-      onMouseLeave={() => isHidden(true)} onClick={() => isOverlayOpen1(true)}>
-          <Image src={bade} alt='boardimg' w={'15em'} h={'15em'}/>
-          <VStack justifyContent={'center'}  id='overlay' display={hidden?'none':'flex'} pos="absolute"
+      _hover={{ cursor: 'pointer'}} onMouseEnter={() => isHidden3(false)}
+      onMouseLeave={() => isHidden3(true)} onClick={() => isOverlayOpen3(true)}>
+          <Image src={yunusa} alt='boardimg' w={'15em'} h={'15em'}/>
+          <VStack justifyContent={'center'}  id='overlay' display={hidden3?'none':'flex'} pos="absolute"
         top="2em"
         right="2em" zIndex={9} bg='rgba(52, 52, 52, 0.8)' w={'11em'} h={'11em'}>
             <Text color={'white'} fontWeight={'normal'} 
             w={'8em'} textAlign={'center'} justifyContent={'center'} fontSize='small'
-            >CHAIRMAN</Text>
+            >Chairman</Text>
             <Text color={'white'} fontWeight={'bold'} 
             w={'8em'} textAlign={'center'} fontSize='medium'
-            >BADE ADESHINA</Text>
+            >YUNUSA SALE MUHAMMAD</Text>
         </VStack>
         
     </Box>
@@ -64,18 +67,39 @@ const BoardPage = () => {
     </Box>
     <Box pos="relative"
       transition="0.5s ease"
-      _hover={{ cursor: 'pointer'}} onMouseEnter={() => isHidden3(false)}
-      onMouseLeave={() => isHidden3(true)} onClick={() => isOverlayOpen3(true)}>
-          <Image src={yunusa} alt='boardimg' w={'15em'} h={'15em'}/>
-          <VStack justifyContent={'center'}  id='overlay' display={hidden3?'none':'flex'} pos="absolute"
+      _hover={{ cursor: 'pointer'}} onMouseEnter={() => isHidden5(false)}
+      onMouseLeave={() => isHidden5(true)} onClick={() => isOverlayOpen5(true)}>
+          <Image src={sam} alt='boardimg' w={'15em'} h={'15em'}/>
+          <VStack justifyContent={'center'}  id='overlay' display={hidden5?'none':'flex'} pos="absolute"
         top="2em"
         right="2em" zIndex={9} bg='rgba(52, 52, 52, 0.8)' w={'11em'} h={'11em'}>
             <Text color={'white'} fontWeight={'normal'} 
             w={'8em'} textAlign={'center'} justifyContent={'center'} fontSize='small'
-            >Board Member</Text>
+            >Non Executive Director</Text>
             <Text color={'white'} fontWeight={'bold'} 
             w={'8em'} textAlign={'center'} fontSize='medium'
-            >YUNUSA SALE MUHAMMAD</Text>
+            >SAMUEL OJOGBO</Text>
+        </VStack>
+        
+    </Box>
+            
+    </HStack>
+
+    <HStack spacing={'4em'}>
+    <Box pos="relative"
+      transition="0.5s ease"
+      _hover={{ cursor: 'pointer'}} onMouseEnter={() => isHidden(false)}
+      onMouseLeave={() => isHidden(true)} onClick={() => isOverlayOpen1(true)}>
+          <Image src={bade} alt='boardimg' w={'15em'} h={'15em'}/>
+          <VStack justifyContent={'center'}  id='overlay' display={hidden?'none':'flex'} pos="absolute"
+        top="2em"
+        right="2em" zIndex={9} bg='rgba(52, 52, 52, 0.8)' w={'11em'} h={'11em'}>
+            <Text color={'white'} fontWeight={'normal'} 
+            w={'8em'} textAlign={'center'} justifyContent={'center'} fontSize='small'
+            >Non Executive Director</Text>
+            <Text color={'white'} fontWeight={'bold'} 
+            w={'8em'} textAlign={'center'} fontSize='medium'
+            >BADE ADESHINA</Text>
         </VStack>
         
     </Box>
@@ -96,8 +120,6 @@ const BoardPage = () => {
         </VStack>
         
     </Box>
-              
-             
     </HStack>
     <Box display={overlayOpen1?'flex':'none'} pos={'absolute'} bg='rgba(52, 52, 52, 0.99)' zIndex={9} h={'vh'} onClick={() => isOverlayOpen1(false)}>
       <HStack>
@@ -105,7 +127,7 @@ const BoardPage = () => {
         <VStack spacing={'2em'}>
         <Text color={'white'} fontWeight={'normal'} 
              textAlign={'center'} justifyContent={'center'} fontSize='small'
-            >CHAIRMAN</Text>
+            >Non Executive Director</Text>
             <Text color={'white'} fontWeight={'bold'} 
             textAlign={'center'} fontSize='medium'
             >BADE ADESHINA</Text>
@@ -123,15 +145,37 @@ const BoardPage = () => {
         <VStack spacing={'2em'}>
         <Text color={'white'} fontWeight={'normal'} 
              textAlign={'center'} justifyContent={'center'} fontSize='small'
-            >Executive Vice Chair Person</Text>
+            >Executive Vice Chair Person </Text>
             <Text color={'white'} fontWeight={'bold'} 
             textAlign={'center'} fontSize='medium'
             >IFEOMA ADEOYE</Text>
             <Text color={'white'} fontWeight={'normal'} 
-             textAlign={'center'} justifyContent={'center'} fontSize='small' w={'70%'}>Ifeoma Adeoye is the Managing Director of Business Nest Investments Limited. She is also the founder and chairperson of The Progressive Advancement Centre for Entrepreneurship (PACE), a microfinance institute founded to empower the economically active poor women in Nigeria.
-             She graduated with a First-Class Honours degree, in Economics, from the University of Manchester, and she holds a Master’s degree in Economics from the University of Warwick.
-             She has over ten years of experience in starting, building, and managing businesses to profitability. Having worked with KPMG, The Royal Bank of Scotland, FBNQuest Merchant Bank, Nigerian Aviation Handling Company, and GMT Energy Resources. She has acquired a broad work experience within the Oil & Gas sector, financial services industry, aviation, consumer markets, and public sector. She has extensive experience in advisory services covering financial advisory, business improvement, corporate strategy articulation, organizational diagnostics & transformation, market study, and industry analysis. She has been in multiple corporate strategy execution projects, feasibility studies, business plan development, and organization transformation projects with a notable track record in strategy articulation, project management, financial analysis, financial modeling, and relationship management. 
-             She is an astute finance professional and an aggressive, yet ethical fund manager; who is committed to the financial empowerment of her clients.
+             textAlign={'center'} justifyContent={'center'} fontSize='small' w={'70%'}>Ifeoma Adeoye is the Managing Director of Business Nest Investments Limited. She is also the founder and chair person of The Progressive Advancement Centre for Entrepreneurship (PACE), a microfinance institute founded to empower the economically active poor women in Nigeria.
+
+             She graduated with a First Class Honours degree, in Economics, from the University of Manchester and she holds a Master’s degree in Economics from the University of Warwick.
+             
+             She has over 10 years of experience with starting, building and managing businesses to profitability. Having worked with KPMG, The Royal Bank of Scotland, FBNQuest Merchant Bank, Nigerian Aviation Handling Company and GMT Energy Resources, she has acquired broad work experience within the Oil & Gas industry, financial services industry, aviation, consumer markets and public sector. She has extensive experience in advisory services covering financial advisory, business improvement, corporate strategy articulation, organizational diagnostics & transformation, market study and industry analysis. She has been involved in multiple corporate strategy execution projects, feasibility studies, business plan development, and organization transformation projects with notable track record in strategy articulation, project management, financial analysis, financial modeling and relationship management. 
+             
+             She is an astute finance professional and an aggressive, yet ethical, fund manager, who is committed to the financial empowerment of her clients.
+              </Text>
+        </VStack>
+     </HStack>
+    </Box>
+    <Box display={overlayOpen5?'flex':'none'} pos={'absolute'} bg='rgba(52, 52, 52, 0.99)' zIndex={9} h={'vh'} onClick={() => isOverlayOpen5(false)}>
+      <HStack>
+      <Image src={sam} alt='boardimg' w={'40em'} h={'40em'}/>
+        <VStack spacing={'2em'}>
+        <Text color={'white'} fontWeight={'normal'} 
+             textAlign={'center'} justifyContent={'center'} fontSize='small'
+            >Non Executive Director</Text>
+            <Text color={'white'} fontWeight={'bold'} 
+            textAlign={'center'} fontSize='medium'
+            >SAMUEL OJOGBO</Text>
+            <Text color={'white'} fontWeight={'normal'} 
+             textAlign={'center'} justifyContent={'center'} fontSize='small' w={'70%'}>Samuel Enwerim Ojogbo has a Bachelor of Law from the Lagos State University (LASU) after which he attended Nigeria Law School and was called to the Bar in 2005. For his postgraduate education, he attended two world-class institutions where he bagged an LL.M from the University of Western Ontario in Canada and a Doctor of Philosophy degree from the University of Nottingham in England where he won an award for research excellence.
+
+             Samuel Enwerim Ojogbo is an expert in Corporate Governance and Compliance, an aspect of professionalism he developed from his experiences at the University of Western Ontario. 
+             He has also practiced and developed expertise over the years in Mergers and acquisitions, Banking, Capital Market, Public-Private Partnerships, and the Law of Trust and Trustees. He taught Corporate Law, Securities Law, and the Law of Trust at the University for about ten years.
              </Text>
         </VStack>
      </HStack>

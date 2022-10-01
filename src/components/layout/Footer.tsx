@@ -6,6 +6,7 @@ import instagram from '../../assets/images/footer/instagram.png'
 import facebook from '../../assets/images/footer/facebook.png'
 import twitter from '../../assets/images/footer/twitter.png'
 import linkedin from '../../assets/images/footer/linkedin.png'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -36,9 +37,9 @@ const Footer = () => {
                 Connect with BNI
             </Text>
             <HStack>
-                <Image w={{ base: '1.5em', md: '2em', lg: '3em' }} src={facebook} />
-                <Image w={{ base: '1.5em', md: '2em', lg: '3em' }} src={linkedin} />
-                <Image w={{ base: '1.5em', md: '2em', lg: '3em' }} src={instagram} />
+            <a href="https://www.facebook.com/businessnestinvestments"> <Image w={{ base: '1.5em', md: '2em', lg: '3em' }} src={facebook} /></a>
+            <a href="https://www.instagram.com/bniholdings/"><Image w={{ base: '1.5em', md: '2em', lg: '3em' }} src={linkedin} /></a>
+            <a href="https://www.linkedin.com/company/business-nest-investments/"><Image w={{ base: '1.5em', md: '2em', lg: '3em' }} src={instagram} /></a>
                 <Image w={{ base: '1.5em', md: '2em', lg: '3em' }} src={twitter} />
                 <Image w={{ base: '1.5em', md: '2em', lg: '3em' }} src={whatsapp} />
             </HStack>
