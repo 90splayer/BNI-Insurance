@@ -1,14 +1,16 @@
-import { Box, Button, Heading, HStack, VStack} from '@chakra-ui/react'
+import { Box, Button, Heading, HStack, VStack, Text, Image} from '@chakra-ui/react'
 import React from 'react'
 import InsightsCard from './InsightsCard'
 import inews1 from '../../../assets/images/insights/inews1.jpg'
 import inews2 from '../../../assets/images/insights/inews2.jpg'
+import { Link } from 'react-router-dom'
 
 
 const InsightsPageRead = () => {
   return (
     <Box bg={'#F0F4F7'} justifyContent={'center'} pt={'3em'} pb={'3em'}>
     <HStack spacing={'4em'}>
+    
         <InsightsCard img= {inews1} heading='NIGERIAN ENTERTAINERS SHOULD BE INSURED'
         details='In 2002, I had the opportunity of meeting of selected persons from both the insurance and entertainment industries at the section of the National Stadium in Surulere, Lagos used for entertainment at the time.
 
@@ -16,7 +18,7 @@ const InsightsPageRead = () => {
 
         For example, the actors, some of whom have become legends today, wanted to know if they would be compensated if the accident resulted from a stunt action in a film. Of course, this was (is) an exemption from a standard Personal Accident Insurance Policy, so the answer then was No! And we will only have to confirm if position has changed 20 years after.'/>
 
-        <InsightsCard img={inews2} heading='NHIA TASKS STATE GOVERNMENTS ON HEALTH INSURANCE SCHEME'
+        <InsightsCard img={inews2}  heading='NHIA TASKS STATE GOVERNMENTS ON HEALTH INSURANCE SCHEME'
         details='The National Healthcare Insurance Authority (NHIA) has urged all 36 state governors in the country to establish National Health Insurance Scheme (NHIS) agency in their various states to provide insurance cover to the citizens.
 
 

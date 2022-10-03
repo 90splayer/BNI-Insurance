@@ -23,12 +23,12 @@ const Home = () => {
       <Box bg={'#F0F4F7'}>
     <HStack  px='6em' zIndex={2} mb='6em'>
         <VStack maxW={{lg:'38em'}} textAlign='left' align='flex-start' mt={{base:'0',lg:'6em'}} zIndex={1} pt={{base:'3em'}}>
-            <Box mb='1em'>
-            <Text fontSize={{ base: '1.4em', md: '2em', lg:'2.4em' }} 
-            fontWeight={'bold'} color={'#003B79'}>NO ONE CAN SURELY PREDICT THE FUTURE. BUT WE CAN PROTECT IT.</Text>
+            <Box mb='0em'>
+            <Text fontSize={{ base: '1.4em', md: '2em', lg:'2.3em' }} 
+            fontWeight={'bold'} color={'#003B79'} fontFamily={'sans-serif'}>NO ONE CAN SURELY PREDICT THE FUTURE. BUT WE CAN PROTECT IT.</Text>
             </Box>
             <Box pb='2em'>
-            <Text fontSize={{ base: 'small', md: 'md', lg:'lg' }} color={'#36534F'}>We guarantee you a quick  access to get a quote and even more reliable plan that will save you much more</Text>
+            <Text fontSize={{ base: 'small', md: 'md', lg:'md' }} color={'#36534F'}>We guarantee you a quick  access to get a quote and even more reliable plan that will save you much more</Text>
             </Box>
         </VStack>
         <CircleLogo />

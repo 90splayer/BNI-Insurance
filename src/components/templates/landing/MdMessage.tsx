@@ -7,12 +7,12 @@ const MdMessage = () => {
     <Box zIndex={5} mt='-9em'>
         <HStack bg='linear-gradient(110.33deg, rgba(0, 59, 121, 0.4) 0%, rgba(253, 184, 17, 0.1) 100%)'
          justifyContent={'space-between'}  px={'7em'} py={'2em'} mb={'2em'} zIndex={1}>
-            <VStack w={'25em'} alignItems='flex-start' spacing={'2em'}>
+            <VStack w={'28em'} alignItems='flex-start' spacing={'2em'}>
               <VStack>
                 <Text color={'white'} textAlign={'left'} 
                 fontWeight={'bold'} fontSize='x-large'
                  zIndex={1}>“IT’S ABOUT HAVING A TAILORED SYSTEM THAT WORKS FOR YOU.”</Text>
-                <Text color={'white'} textAlign={'left'} fontSize='small' mb={'2em'} zIndex={1}>BNI Insurance isn’t a corporate creation or a character dreamt up by a focus group. She’s the living, breathing economist and master financial advisor who has been making and investing money sinnce the 2010’s.</Text>
+                <Text color={'white'} textAlign={'left'} fontSize='small' mb={'2em'} zIndex={1}>BNI Insurance isn’t a corporate creation or a character dreamt up by a focus group. It's the heart of a living, breathing economist and master financial advisor who has been making and investing money sinnce the 2010’s.</Text>
                 </VStack>
                 <Text color={'white'} zIndex={1} textAlign={'left'} fontWeight={'bold'} 
                 fontSize={'small'} cursor={'pointer'}>Discover more →</Text>

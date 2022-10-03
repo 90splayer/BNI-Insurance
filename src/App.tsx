@@ -24,6 +24,7 @@ import BondsPage from './pages/BondsPage';
 import PensionPage from './pages/PensionPage';
 import BoardPage from './pages/BoardPage'
 import WhyUsPage from './pages/WhyUsPage';
+import QuotePage from './pages/QuotePage';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -57,6 +58,7 @@ function App() {
     <Route path="products/pensioninsurance" element={<PensionPage />} />
     <Route path="aboutboard" element={<BoardPage />} />
     <Route path="whyus" element={<WhyUsPage />} />
+    <Route path="quote" element={<QuotePage />} />
     </Routes>
     <Footer/>
     </BrowserRouter>

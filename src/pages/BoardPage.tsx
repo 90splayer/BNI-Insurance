@@ -67,18 +67,18 @@ const BoardPage = () => {
     </Box>
     <Box pos="relative"
       transition="0.5s ease"
-      _hover={{ cursor: 'pointer'}} onMouseEnter={() => isHidden5(false)}
-      onMouseLeave={() => isHidden5(true)} onClick={() => isOverlayOpen5(true)}>
-          <Image src={sam} alt='boardimg' w={'15em'} h={'15em'}/>
-          <VStack justifyContent={'center'}  id='overlay' display={hidden5?'none':'flex'} pos="absolute"
+      _hover={{ cursor: 'pointer'}} onMouseEnter={() => isHidden4(false)}
+      onMouseLeave={() => isHidden4(true)} onClick={() => isOverlayOpen4(true)}>
+          <Image src={feso} alt='boardimg' w={'15em'} h={'15em'}/>
+          <VStack justifyContent={'center'}  id='overlay' display={hidden4?'none':'flex'} pos="absolute"
         top="2em"
         right="2em" zIndex={9} bg='rgba(52, 52, 52, 0.8)' w={'11em'} h={'11em'}>
             <Text color={'white'} fontWeight={'normal'} 
             w={'8em'} textAlign={'center'} justifyContent={'center'} fontSize='small'
-            >Non Executive Director</Text>
+            >Managing Director</Text>
             <Text color={'white'} fontWeight={'bold'} 
             w={'8em'} textAlign={'center'} fontSize='medium'
-            >SAMUEL OJOGBO</Text>
+            >ABIODUN OYEFESO</Text>
         </VStack>
         
     </Box>
@@ -103,20 +103,21 @@ const BoardPage = () => {
         </VStack>
         
     </Box>
+    
     <Box pos="relative"
       transition="0.5s ease"
-      _hover={{ cursor: 'pointer'}} onMouseEnter={() => isHidden4(false)}
-      onMouseLeave={() => isHidden4(true)} onClick={() => isOverlayOpen4(true)}>
-          <Image src={feso} alt='boardimg' w={'15em'} h={'15em'}/>
-          <VStack justifyContent={'center'}  id='overlay' display={hidden4?'none':'flex'} pos="absolute"
+      _hover={{ cursor: 'pointer'}} onMouseEnter={() => isHidden5(false)}
+      onMouseLeave={() => isHidden5(true)} onClick={() => isOverlayOpen5(true)}>
+          <Image src={sam} alt='boardimg' w={'15em'} h={'15em'}/>
+          <VStack justifyContent={'center'}  id='overlay' display={hidden5?'none':'flex'} pos="absolute"
         top="2em"
         right="2em" zIndex={9} bg='rgba(52, 52, 52, 0.8)' w={'11em'} h={'11em'}>
             <Text color={'white'} fontWeight={'normal'} 
             w={'8em'} textAlign={'center'} justifyContent={'center'} fontSize='small'
-            >Managing Director</Text>
+            >Non Executive Director</Text>
             <Text color={'white'} fontWeight={'bold'} 
             w={'8em'} textAlign={'center'} fontSize='medium'
-            >ABIODUN OYEFESO</Text>
+            >SAMUEL OJOGBO</Text>
         </VStack>
         
     </Box>

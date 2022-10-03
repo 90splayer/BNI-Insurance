@@ -82,7 +82,7 @@ const Header = () => {
             </Box>   
         </HStack>
         
-        <Link to="contact"> <Button
+        <Link to="quote"> <Button
           bg="#003B79"
           color={'white'}
           borderRadius={'none'}

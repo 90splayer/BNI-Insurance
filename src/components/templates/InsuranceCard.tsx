@@ -14,15 +14,15 @@ const InsuranceCard: FC<Props> = ({ heading, description, mr }) => {
     <Box
       color="#fff"
       px={{ base: '3rem',md: '2em', lg: "4.6rem" }}
-      pt={{ base: '0.6rem',md: '2em', lg: '1.5rem' }}
+      pt={{ base: '0.6rem',md: '2em', lg: '2rem' }}
       h={{ base: '18rem',md: '17em', lg: '15rem' }}
       w={{ base: '220px', lg: '500px' }}
       zIndex={5}
       mb={{ base: '0', lg: '0' }}
       mr={mr}
-      bg="rgba(0, 59, 121, 0.12)"
-      _hover={{ bg: 'rgba(253, 184, 17, 0.02)' }}
-      borderColor='black'
+      bg='linear-gradient(110.33deg, rgba(0, 59, 121, 0.3) 0%, rgba(253, 184, 17, 0.06) 100%)'
+      _hover={{ bg: 'linear-gradient(110.33deg, rgba(0, 59, 121, 0.1) 0%, rgba(253, 184, 17, 0.03) 100%)' }}
+      borderColor='white'
       borderStyle={'solid'}
       borderWidth='thin'
       borderRadius={'5px'}>

@@ -14,7 +14,7 @@ const Footer = () => {
     px={{ base: '3rem', md: '4em', lg: '7rem' }} fontWeight={'bold'} color={'#003B79'} fontSize={{ base: 'x-small', md: 'smaller', lg:'medium' }}>
         <Image src={logo} w={{ base: '5em', md: '6em', lg:'7em' }}/>
         <Box zIndex={1} alignItems={'flex-start'}  >
-        <Box _hover={{ color: '#FAA1E1' }} mb={'0.8em'} fontSize={{ base: 'smaller', md: 'small', lg:'lg' }}>
+        <Box  mb={'0.8em'} fontSize={{ base: 'smaller', md: 'small', lg:'lg' }}>
                 Contact Details
         </Box>
            <Box mb={'0.5em'} fontWeight={{ base: 'normal', md: 'normal', lg:'normal' }} fontSize={{ base: 'smaller', md: 'small', lg:'small' }}>
@@ -25,7 +25,7 @@ const Footer = () => {
             </Box>
         </Box>
         <Box zIndex={1} alignItems={'flex-start'}  >
-        <Box _hover={{ color: '#FAA1E1' }} mb={'0.8em'} fontSize={{ base: 'smaller', md: 'small', lg:'lg' }}>
+        <Box  mb={'0.8em'} fontSize={{ base: 'smaller', md: 'small', lg:'lg' }}>
                 Address
         </Box>
            <Box mb={'0.5em'} fontWeight={{ base: 'normal', md: 'normal', lg:'normal' }} fontSize={{ base: 'smaller', md: 'small', lg:'small' }}>
